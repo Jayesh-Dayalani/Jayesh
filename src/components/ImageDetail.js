@@ -5,8 +5,9 @@ const ImageDeatil = (props) => {
     console.log(props);
     return (
         <View>
-            <Image source = {require('../../assets/beach.jpg')}/>
-            <Text>{props.imageText}</Text>
+            <Image source = {props.imageSource}/>
+            <Text>{props.imageTitle}</Text>
+            <Text>{props.imageScore} / 10</Text>
         </View>
     );
 };
